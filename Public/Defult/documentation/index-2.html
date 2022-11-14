@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Documentation Cleanstart HTML</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/animate.css" rel="stylesheet" type="text/css">
+<!-- Theme styles and Menu styles -->
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/mainmenu.css" rel="stylesheet" type="text/css">
+<!-- Call Fontawsome Icon Font from a CDN -->
+<link href="../../../netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="../js/modernizr.custom.48287.js"></script>
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../apple-touch-fa-57x57-precomposed.html">
+<link rel="shortcut icon" href="../favicon.png">
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div class="overflow_wrapper">
+     <header>
+          <div class="container">
+               <div class="logo"><a class="brand" href="../index.html"> <img src="../images/cleanstart_logo.png" alt="optional logo"> <span class="logo_title">Cleanstart</span></a></div>
+               <div id="mainmenu" class="menu_container">
+                    <label class="mobile_collapser">MENU</label>
+                    <!-- Mobile menu title -->
+                    <ul>
+                         <li><a href="../index.html"><i class="fa fa-mail-reply"></i> Back to Demo <b>Home</b></a></li>
+                         <li><a href="http://www.plethorathemes.com/support"><i class="fa fa-flag"></i> <b>Plethora</b> Support Forum</a></li>
+                    </ul>
+               </div>
+               <div class="triangle-up-left"></div>
+               <div class="triangle-up-right"></div>
+          </div>
+     </header>
+     <div class="full_page_photo" style="background-image: url(../images/documentation.jpg);">
+          <div class="container">
+               <div class="hgroup">
+                    <div class="hgroup_title animated bounceInUp">
+                         <div class="container">
+                              <h1>We got you <strong>covered!</strong></h1>
+                         </div>
+                    </div>
+                    <div class="hgroup_subtitle animated bounceInUp skincolored">
+                         <div class="container">
+                              <p>All you need to know about the gears in this machine!</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="main">
+          <div class="container triangles-of-section">
+               <div class="triangle-up-left"></div>
+               <div class="square-left"></div>
+               <div class="triangle-up-right"></div>
+               <div class="square-right"></div>
+          </div>
+          <div class="container bs-docs-container">
+               <div class="row">
+                    <div class="col-md-9" role="main">
+                         <!-- Overview
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="overview" class="page-header"><i class="fa fa-align-center"></i> Cleanstart Overview</h2>
+                              <p>Cleanstart is a multipurpose but mainly<strong> business oriented</strong> HTML5 Template, built to serve as a foundation for your web projects. It is based on <a href="http://getbootstrap.com/"><strong>Twitter Bootstrap (check out BS excellent documentation)</strong></a>, the front-end development framework with a <strong>steep learning curve</strong> that changes the way you develop sites. Cleanstart makes real use of {LESS}. It comes with a <strong><a href="#less">style.less</a></strong> file that tries to use all the power of <strong>{less} and bootstrap combined</strong>. Cleanstart is based on <strong>fine typography</strong> and <strong>large photography</strong>. It uses <strong><a href="#animations">subtle animations</a></strong> & a sticky<strong><a href="#header"> header effect</a></strong>. </p>
+                              <p>To use the template <strong>you have to be familiar with HTML & CSS.</strong> The demo is self-explanatory and you can easily study the HTML files to discover how to customise the templates to your needs. This documentation covers some basics to help you get started...
+                                   If you are a web developer you are about to <strong>boost your development workflow!</strong></p>
+                         </div>
+                         <!-- layout
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="layout" class="page-header"><i class="fa fa-th-large"></i> Responsive Grid & Main Layout</h2>
+                              <p>Cleanstart uses Twitter Bootstrap to build the responsive grid. <a href="http://getbootstrap.com/css/#grid" target="_blank">You should study it if you aren't familiar already.</a> Of course it also uses all of bootstrap to style HTML elements so it is a good idea to study <a href="http://getbootstrap.com/" target="_blank">all of bootstrap capabilities</a>.</p>
+                              <p>The main layout of the template can be summarized in the next picture:</p>
+                              <img src="images/HTML-2.jpg"  alt="main layout"> </div>
+                         <!-- Main Sections #mainsections
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="mainsections" class="page-header"><i class="fa fa-puzzle-piece"></i> Main sections</h2>
+                              <p>The main section of every page consists of sections that can be transparent, dark or skin-colored. To add the triangles on top of a section you just need to add some HTML.</p>
+                              <p>For example to create a dark section with triangles on top:</p>
+                              <pre>&lt;section class=&quot;dark_section&quot;&gt;<br>          <br>          &lt;div class=&quot;container triangles-of-section&quot;&gt;<br>          	&lt;div class=&quot;triangle-up-left&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;square-left&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;triangle-up-right&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;square-right&quot;&gt;&lt;/div&gt;<br>          &lt;/div&gt;<br>          <br>          &lt;div class=&quot;container&quot;&gt;          <br>           <br>               ...content...<br>          <br>          &lt;/div&gt;<br>&lt;/section&gt;</pre>
+                              <p>If a dark or parallax section is followed by another dark section then you have to add class <code>.following_dark</code> to the second section.</p>
+                              <pre>
+&lt;section class=&quot;dark_section&quot;&gt;<br>                <br>               ...content...<br><br>&lt;/section&gt;
+&lt;section class=&quot;dark_section following_dark&quot;&gt;<br>          <br>          &lt;div class=&quot;container triangles-of-section&quot;&gt;<br>          	&lt;div class=&quot;triangle-up-left&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;square-left&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;triangle-up-right&quot;&gt;&lt;/div&gt;<br>          	&lt;div class=&quot;square-right&quot;&gt;&lt;/div&gt;<br>          &lt;/div&gt;<br>          <br>          &lt;div class=&quot;container&quot;&gt;          <br>           <br>               ...content...<br>          <br>          &lt;/div&gt;<br>&lt;/section&gt;</pre>
+                              <h3 class="page-header">Parallax Section</h3>
+                              <p>To create a parallax section you have to assign <code>.parallax</code> to a section and put a background-image.</p>
+                              <pre>&lt;section class=&quot;parallax call_to_action&quot; style=&quot;background-image:url(images/parallax.jpg)&quot;&gt;<br>           &lt;div class=&quot;overlay&quot;&gt;<br>           	&lt;img alt=&quot;responsive&quot; src=&quot;images/rocket_trans.png&quot;&gt;<br>               &lt;h3&gt;give your &lt;strong&gt;creative&lt;/strong&gt; ideas a boost&lt;/h3&gt;<br>               &lt;h4&gt;Mouse over our team photos to see a cool effect!&lt;/h4&gt;<br>          &lt;/div&gt;     <br>&lt;/section&gt;</pre>
+                              <p><strong>NOTICE:</strong> you cannot put triangles on top of a parallax section.</p>
+                              <h3 class="page-header">Before & After Section</h3>
+                              <p>To create a horizontal teaser with a &quot;before &amp; after&quot; feature, assign <code>.<strong>twentytwenty-container</strong></code> to a div and put 2 images inside.</p>
+                              <pre>&lt;section class=&quot;horizontal_teaser&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;<br>               &lt;div class=&quot;row&quot;&gt;<br>                    &lt;div class=&quot;col-sm-12 col-md-4 horizontal_teaser_left&quot;&gt; <br>                         &lt;h3&gt;Before and After!&lt;/h3&gt;<br>                         &lt;p&gt;Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augue elementum id. Quisque at lectus leo, nec placerat mi. Curabitur egestas eleifend interdum. Suspendisse potenti. Suspendisse nec risus. &lt;/p&gt;<br>                         &lt;p&gt;Vivamus vestibulum neque quis nunc convallis venenatis. Nulla tristique lorem sit amet ipsum ornare sit amet feugiat nulla condimentum. Sed faucibus volutpat nunc, at ullamcorper augu. &lt;/p&gt;<br>                    &lt;/div&gt;<br>                    &lt;div class=&quot;col-sm-12 col-md-8 horizontal_teaser_right&quot;&gt;<br>                         <br>                      	<strong>&lt;div class=&quot;twentytwenty-container&quot;&gt;<br>         			&lt;img src=&quot;images/img_before.png&quot; /&gt;<br>          			&lt;img src=&quot;images/img_after.jpg&quot; /&gt;<br>        		&lt;/div&gt;</strong><br>                              <br>                    &lt;/div&gt;<br>               &lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/section&gt;</pre>
+                         </div>
+                         <div class="bs-docs-section">
+                              <h2 id="portfolio" class="page-header"><i class="fa fa-th"></i> Portfolio, Gallery & Isotope Filter</h2>
+                              <p>The <a href="../portfolio.html">Portfolio</a> Page uses the <a href="http://isotope.metafizzy.co/" target="_blank">Isotope v1.5.25</a> jQuery plugin to filter the portfolio items according to their categories. The section has a class of <code>portfolio_strict</code> that styles all the portfolio items to a certain 320px height.</p>
+                              <p>To create the row with the filters:</p>
+                              <pre>&lt;ul class=&quot;portfolio_filters&quot;&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;*&quot;&gt;show all&lt;/a&gt;&lt;/li&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.cat_artists&quot;&gt;artists&lt;/a&gt;&lt;/li&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.cat_people&quot;&gt;people&lt;/a&gt;&lt;/li&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.<strong>cat_travel</strong>&quot;&gt;travel&lt;/a&gt;&lt;/li&gt;<br>	&lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.cat_poetic&quot;&gt;poetic&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+                              <p>Every portfolio item must have a coresponding class in order to respond to the filtering.</p>
+                              <pre>&lt;div class=&quot;cat_people col-xs-12 col-sm-6 col-md-4 col-lg-4&quot;&gt;<br>	&lt;div class=&quot;portfolio_item&quot;&gt; 
+		&lt;a href=&quot;portfolio_item.html&quot;&gt;<br>                              &lt;figure style=&quot;background-image:url(images/portfolio/t5.jpg)&quot;&gt;<br>                                   &lt;figcaption&gt;<br>                                        &lt;div class=&quot;portfolio_description&quot;&gt;<br>                                             &lt;h3&gt;The CleanStart Project&lt;/h3&gt;<br>                                             &lt;span class=&quot;cross&quot;&gt;&lt;/span&gt;<br>                                             &lt;p&gt;People&lt;/p&gt;<br>                                        &lt;/div&gt;<br>                                   &lt;/figcaption&gt;<br>                              &lt;/figure&gt;<br>		&lt;/a&gt; 
+	&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                              <p>The <a href="../gallery.html">Masonry Gallery</a> Page uses the Masonry layout mode of <a href="http://isotope.metafizzy.co/" target="_blank">Isotope v1.5.25</a> jQuery plugin to arrange the portfolio items according to their dimensions. The section has a class of <code>portfolio_masonry</code> which does not restrict the <code>&lt;div class=&quot;portfolio_item&quot;&gt;</code> height.</p>
+                         </div>
+                         <!-- Less
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="less" class="page-header"><i class="fa fa-stack-overflow"></i> Less, CSS &amp; Skins</h2>
+                              <p>Cleanstart makes heavy use of <a href="http://lesscss.org/">LESS</a> to style its content but you <strong>may as well work with <a href="http://www.w3.org/Style/CSS/">CSS</a></strong>. The files responsible for the styling are in the "<em>twitter-bootstrap</em>" & the "<em>less</em>" folders while the final compiled to CSS stylesheet &quot;<em>style.css</em>&quot; is in the css directory. In &quot;<em>style.less</em>&quot; we import &quot;<em>bootstrap.less</em>&quot;, in order to take advantage of its styles, helper classes and mixins, and the &quot;<em>custom_variables.less</em>&quot; which is Bootstrap &quot;<em>variables.less</em>&quot; that we copied and altered in order to override the original variables and make our custom bootstrap skins. This way we leave Bootstrap unharmed. </p>
+                              <ul>
+                                   <li>less folder
+                                        <ul>
+                                             <li>less/custom_variables.less</li>
+                                             <li>less/<strong>style.less</strong></li>
+                                             <li>less/mainmenu.less</li>
+                                        </ul>
+                                   </li>
+                                   <li>css folder
+                                        <ul>
+                                             <li><strong>style.css</strong></li>
+                                             <li>mainmenu.css</li>
+                                             <li>animate.css</li>
+                                             <li>imagelightbox.css</li>
+                                             <li>simpletextrotator.css</li>
+                                             <li>_style_switcher.css</li>
+                                        </ul>
+                                        <ul>
+                                             <li>style.css</li>
+                                             <li>style-blue-default.css</li>
+                                             <li>style-golden.css</li>
+                                             <li>style-purple.css</li>
+                                        </ul>
+                                   </li>
+                              </ul>
+                              <p>To change the skin you have to "call" the style-...css of your choice from the css folder</p>
+                              <pre>&lt;link href=&quot;css/style-golden.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</pre>
+                              <p>...or even better, assign the <code>@brand-primary</code> variable to the color of your choise and recompile the styles.less file.</p>
+                              <p>You can use a LESS compiler of your choise. We use <a href="http://crunchapp.net/">Crunch</a>.</p>
+                              <p>&nbsp;</p>
+                         </div>
+                         <!-- header
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="header" class="page-header"><i class="fa fa-hand-o-up"></i> Header</h2>
+                              <p>There are two main layouts for the header section:</p>
+                              <ul>
+                                   <li>The <strong>default layout</strong> with the logo to the left & the menu to the right.</li>
+                                   <li>The <strong>centered layout</strong> with the logo and the menu aligned to the center.</li>
+                              </ul>
+                              <p>There is also the capability to add a <strong>top-toolbar</strong> in the header in either layout. An example is the <a href="../contact.html" target="_blank">Contact page</a>.</p>
+                              <p>The <strong>default layout</strong> is presented in the <a href="../index.html">Homepage</a> & the majority of the demo pages while the <strong>centered version</strong> can be seen at the <a href="../home_alternative.html">Homepage Alternative</a> demo page. The centered version of the header can be achieved by applying the <em>centered</em> class to the <code>&lt;header&gt;</code> element.</p>
+                              <pre>
+&lt;header class=&quot;centered&quot;&gt;
+   ...
+&lt;/header&gt;  
+</pre>
+                              <h3 class="page-header">Logo Area</h3>
+                              <p>The logo area has a width of 315px by default. It has an image and a title. Any one of those can be left out. The image is 100x69px but it is styled to 26px height with CSS in order to show better on retina monitors. Of course any settings of those mentioned above can be changed to fit your needs, just search for <code>.logo</code> at style.less or style.css</p>
+                              <h3 class="page-header">Sticky Header Effect</h3>
+                              <p>You probably already noticed that the header is sticky as you scroll-down. The effect can be achieved by assigning the <code>sticky_header</code> class on the <code>body</code> tag.</p>
+                              <pre>
+&lt;body class=&quot;sticky_header&quot;&gt;</pre>
+                         </div>
+                         <!-- megamenu
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="megamenu" class="page-header"><i class="fa fa-list-ul"></i> Mega Menu</h2>
+                              <p>Cleanstart uses the "<a href="http://codecanyon.net/item/wonderful-css3-flat-menu/5977486" target="_blank">Wonderful CSS3 Flat Menu</a>" with some small modifications. The styling is done by <strong>mainmenu.css</strong> file. Below is the main markup:</p>
+                              <pre>&lt;div id=&quot;mainmenu&quot; class=&quot;<strong>menu_container</strong>&quot;&gt;<br>    &lt;label class=&quot;<strong>mobile_collapser</strong>&quot;&gt;MENU&lt;/label&gt; <strong>&lt;!-- Mobile menu title --&gt;</strong><br>       &lt;ul&gt;<br>          &lt;li class=&quot;<strong>active</strong>&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt; <strong>&lt;!-- Active Menu Item --&gt;</strong><br>		  &lt;li&gt;&lt;a href=&quot;about_us.html&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt; <strong>&lt;!-- Simple Menu Item --&gt;</strong><br>          &lt;li&gt;&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;<br>            ...
+		&lt;/ul&gt;
+&lt;/div&gt;</pre>
+                              <p>To create a <strong>simple dropdown</strong> menu:</p>
+                              <code>dmui_dropdown_block</code> - Main dropdown container for any dropdown menu type<br>
+                              <code>dmui-submenu</code> - multilevel menu list <br>
+                              <br>
+                              <pre>&lt;li&gt;<br>	&lt;a href=&quot;#&quot;&gt;Simple dropdown menu&lt;/a&gt;<br>	&lt;div class=&quot;<strong>dmui_dropdown_block</strong>&quot;&gt;<br>		&lt;ul class=&quot;<strong>dmui-submenu</strong>&quot;&gt;<br>			&lt;li&gt;&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;<br>            		...<br>		&lt;/ul&gt;<br>	&lt;/div&gt;<br>&lt;/li&gt;</pre>
+                              <p>To create a <strong>multilevel dropdown</strong> menu:</p>
+                              <code>has-dropdown</code> - li items which contain child submenu should have this class<br>
+                              <br>
+                              <pre>&lt;li&gt;<br>	&lt;a href=&quot;#&quot;&gt;Multilever dropdown menu&lt;/a&gt;<br>	&lt;div class=&quot;<strong>dmui_dropdown_block</strong>&quot;&gt;<br>		&lt;ul class=&quot;<strong>dmui-submenu</strong>&quot;&gt; <strong>&lt;!-- First sublevel --&gt;</strong><br>			&lt;li&gt;&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;<br>			...<br>			&lt;li class=&quot;<strong>has-dropdown</strong>&quot;&gt;<br>				&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;<br>				&lt;ul class=&quot;<strong>dmui-submenu</strong>&quot;&gt; <strong>&lt;!-- Second sublevel --&gt;</strong><br>					&lt;li&gt;&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;<br>					...<br>				&lt;/ul&gt;<br>			&lt;/li&gt;<br>		&lt;/ul&gt;<br>	&lt;/div&gt;<br>&lt;/li&gt;</pre>
+                              <p>To create a <strong>mega dropdown</strong> menu:</p>
+                              <code>dmui-col</code> - content column <br>
+                              To set the column widths add the one of the following class names to the block column: <code>span1</code> - width: 100%; <code>span2</code> - width: 50%; <code>span3</code> - width: 33%; <code>span4</code> - width: 25%;<br>
+                              <br>
+                              <pre>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;MEGA dropdown menu&lt;/a&gt;<br>	&lt;div class=&quot;dmui_dropdown_block full_width&quot;&gt;<br>		&lt;div class=&quot;dmui-container&quot;&gt;<br>			&lt;div class=&quot;<strong>dmui-col</strong> span3&quot;&gt;<br>				&lt;div class=&quot;dmui-container&quot;&gt;<br>					&lt;ul class=&quot;dmui-submenu&quot;&gt;<br>					&lt;li&gt;&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;&lt;/li&gt;<br>					...<br>					&lt;/ul&gt;<br>				&lt;/div&gt;<br>			&lt;/div&gt;
+			&lt;div class=&quot;dmui-col span3&quot;&gt;<br>				...<br>			&lt;/div&gt;
+			&lt;div class=&quot;dmui-col span3&quot;&gt;<br>				...<br>			&lt;/div&gt;<br>		&lt;/div&gt;                    <br>	&lt;/div&gt;<br>&lt;/li&gt;</pre>
+                         </div>
+                         <!-- flexslider
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="flexslider" class="page-header"><i class="fa fa-indent"></i> Flexslider</h2>
+                              <p>The Flexslider has a height of 580px by default and is presented at the <a href="../index.html">Homepage</a> and the <a href="../portfolio_item.html">Portfolio Item pages</a> and is powered by <a href="http://www.woothemes.com/flexslider/" target="_blank">jQuery FlexSlider v2.0</a>. The HTML markup to create the slider is the following:</p>
+                              <br>
+                              <pre>&lt;section id=&quot;slider_wrapper&quot; class=&quot;slider_wrapper full_page_photo&quot;&gt;<br>     &lt;div id=&quot;main_flexslider&quot; class=&quot;flexslider&quot;&gt;<br>          &lt;ul class=&quot;slides&quot;&gt;<br>               &lt;li class=&quot;item&quot; style=&quot;background-image: url(images/4.jpg)&quot;&gt;<br>                    &lt;div class=&quot;container&quot;&gt;<br>                         &lt;div class=&quot;carousel-caption&quot;&gt;<br>                              &lt;h1&gt;a &lt;strong&gt;flexible&lt;/strong&gt; theme&lt;br&gt;<br>                                   you can &lt;strong&gt;trust&lt;/strong&gt; &amp;amp; &lt;strong&gt;build upon&lt;/strong&gt;!&lt;/h1&gt;<br>                              &lt;p class=&quot;lead skincolored&quot;&gt;clean&lt;strong&gt;start&lt;/strong&gt; is based on &lt;strong&gt;good typography&lt;/strong&gt; and &lt;strong&gt;large photography&lt;/strong&gt;, serving as a foundation for your creative projects. Feel free to browse its templates and discover its features.&lt;/p&gt;                   &lt;/div&gt;<br>               &lt;/li&gt;<br>               &lt;li class=&quot;item&quot; style=&quot;background-image: url(images/5.jpg)&quot;&gt;<br>                   ...<br>               &lt;/li&gt;<br>               &lt;li class=&quot;item&quot; style=&quot;background-image: url(images/6.jpg)&quot;&gt;<br>                    ...<br>               &lt;/li&gt;<br>               &lt;li class=&quot;item&quot; style=&quot;background-image: url(images/7.jpg)&quot;&gt;<br>                    ...<br>               &lt;/li&gt;<br>          &lt;/ul&gt;<br>     &lt;/div&gt;<br>&lt;/section&gt;</pre>
+                              <p>The initialization & settings can be found at <code>js/cleanstart_theme.js</code></p>
+                              <p>The photos are put as <code>backgound-image</code> and styled as <code>background:cover</code> in order to always fit optimaly in the space provided. You can change the height of the <code>slider_wrapper</code> to fit your needs while 480px is the default.</p>
+                              <p>In every slide there is the <code>carousel-caption</code> that consists of a large title <code>h1</code> and a small subtitle <code>p.lead</code>. You can style those to black background (by default) or skin-color background by assigning the <code>skincolored</code> class.</p>
+                              <pre>&lt;div class=&quot;carousel-caption&quot;&gt;<br>	&lt;h1&gt;a &lt;strong&gt;flexible&lt;/strong&gt; theme&lt;br&gt; you can &lt;strong&gt;trust&lt;/strong&gt; &amp;amp; &lt;strong&gt;build upon&lt;/strong&gt;!&lt;/h1&gt;<br>	&lt;p class=&quot;lead skincolored&quot;&gt;clean&lt;strong&gt;start&lt;/strong&gt; is based on &lt;strong&gt;good typography&lt;/strong&gt; and &lt;strong&gt;large photography&lt;/strong&gt;, serving as a foundation for your creative projects. Feel free to browse its templates and discover its features.&lt;/p&gt;
+&lt;/div&gt;</pre>
+                         </div>
+                         <!-- fullpagephoto
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="fullpagephoto" class="page-header"><i class="fa fa-picture-o"></i> Full Page Photo & Video</h2>
+                              <p>The full-page photo has a height of 480px by default and the actual photo is put as <code>backgound-image</code> and styled as <code>background:cover</code> in order to always fit optimaly in the space provided. There is also a <code>call_to_action</code> section consisting of a h3 and a h4 which are animated and have a black-alpha background by default. This can be changed to skin-color alpha just by adding the <code>skincolored</code> class to either one of them.</p>
+                              <br>
+                              <pre>&lt;div class=&quot;full_page_photo&quot; style=&quot;background-image: url(images/about_us.jpg);&quot;&gt;<br>	&lt;hgroup&gt;<br>               &lt;div class=&quot;hgroup_title animated bounceInUp&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;h1 class=&quot;&quot;&gt;About us&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;<br>               &lt;div class=&quot;hgroup_subtitle animated bounceInUp skincolored&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;p&gt;Small business with a &lt;strong&gt;character&lt;/strong&gt; and a style unique enough to impress!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;<br>      &lt;/hgroup&gt;<br>&lt;/div&gt;</pre>
+                              <p>You can also put <strong>background video</strong> in this area, which you should then assign id <code>map</code>. You should link to a video-file in .mp4 format in the data-video attribute. You should also include some scripts in your page. You can find more at <a href="http://dfcb.github.io/BigVideo.js/">BigVideo.js site</a>.</p>
+                              <br>
+                              <pre>&lt;div class=&quot;full_page_photo&quot; <strong>id=&quot;video&quot; data-video=&quot;images/video_HD.mp4&quot;</strong>&gt;<br>	    &lt;hgroup&gt;<br>               &lt;div class=&quot;hgroup_title animated bounceInUp&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;h1 class=&quot;&quot;&gt;About us&lt;/h1&gt;&lt;/div&gt;&lt;/div&gt;<br>               &lt;div class=&quot;hgroup_subtitle animated bounceInUp skincolored&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;p&gt;Small business with a &lt;strong&gt;character&lt;/strong&gt; and a style unique enough to impress!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;<br>          &lt;/hgroup&gt;<br>&lt;/div&gt;</pre>
+                              <br>
+                              <p>The scripts:</p>
+                              <pre>&lt;script src=&quot;js/jquery-ui-1.8.22.custom.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;js/jquery.imagesloaded.min.js&quot;&gt;&lt;/script&gt;<br>&lt;script src=&quot;http://vjs.zencdn.net/c/video.js&quot;&gt;&lt;/script&gt;<br>&lt;script type=&quot;text/javascript&quot; src=&quot;js/bigvideo.js&quot;&gt;&lt;/script&gt;<br>&lt;script type=&quot;text/javascript&quot; src=&quot;js/bigvideo_init.js&quot;&gt;&lt;/script&gt;                         </pre>
+                         </div>
+                         <!-- Styled Elements #shortcodes 
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="shortcodes" class="page-header"><i class="fa fa-rocket"></i> Styled Elements "Shortcodes"</h2>
+                              <p>There are some groups of HTML elements which have a default styling but this styling can be changed just by adding some classes.</p>
+                              <p><strong>For example</strong> the <code>section_header</code> has a default styling but accepts <code>elegant</code>, <code>fancy</code> and <code>centered</code> classes. The basic markup is:</p>
+                              <pre>&lt;h2 class=&quot;section_header&quot;&gt;&lt;b&gt;Default&lt;/b&gt;header&lt;small&gt;and its descrition&lt;/small&gt;&lt;/h2&gt;</pre>
+                              <h2 class="section_header"><b>Default</b> header <small>and its descrition</small></h2>
+                              <pre>&lt;h2 class=&quot;section_header elegant&quot;&gt;&lt;b&gt;Elegant&lt;/b&gt;header &lt;small&gt;and its descrition&lt;/small&gt;&lt;/h2&gt;</pre>
+                              <h2 class="section_header elegant"><b>Elegant </b>header <small>and its descrition</small></h2>
+                              <pre>&lt;h2 class=&quot;section_header fancy centered&quot;&gt;&lt;b&gt;Fancy&lt;/b&gt;centered &lt;small&gt;and its descrition&lt;/small&gt;&lt;/h2&gt;</pre>
+                              <h2 class="section_header fancy centered"><b>Fancy</b>centered<small>and its descrition</small></h2>
+                              <p>You can see more examples at the <a href="../services.html">Services</a> &amp; the<a href="../elements.html"> Design Elements</a> page.</p>
+                         </div>
+                         <!-- footer
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="footer" class="page-header"><i class="fa fa-hand-o-down"></i> Footer &amp; Contact Page</h2>
+                              <p>The FLICKR widget settings that appears in the footer can be found in <code>js/cleanstart_theme.js</code></p>
+                              <p>To edit the SVG background of the twitter area, follow this link: <a href="http://svgeneration.com/generate/GPlay?height=8&amp;width=8&amp;background=f0f0f0&amp;overlay=000000&amp;weight=3&amp;padding=0&amp;" target="_blank">http://svgeneration.com/generate/GPlay?height=8&width=8&background=f0f0f0&overlay=000000&weight=3&padding=0&</a> </p>
+                              <p><strong>The <a href="../contact.html">Contact Page</a> has a Working Ajax &amp; PHP Contact Form </strong>which you can set in the contact.php and contact_form.js files.</p>
+                              <p>The google map in the contact page uses the <strong>Google Maps Api v3</strong> and it will not work as is. It wil show you the following message:</p>
+                              <pre>Google has disabled use of the Maps API for this application.<br>The provided key is not a valid Google API Key, or it is not authorized for the Google Maps<br>Javascript API v3 on this site. If you are the owner of this application,<br>you can learn about obtaining a valid key here:<br>https://developers.google.com/maps/documentation/javascript/tutorial#api_key</pre>
+                              <p><strong>So Google tells you that you have to get your own API Key for the map to work</strong>. It is easy and you can follow the directions shown at <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key">this tutorial</a>. After you get your own API Key, scroll down the code at the bottom of the contact.html  file and follow the instructions. You can even style your map to different colors at the google_map.js file as shown for example at the <a href="http://snazzymaps.com/">Snazzy Maps</a>!</p>
+                         </div>
+                         <!-- Animations
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="animations" class="page-header"><i class="fa fa-magic wow bounceInLeft"></i> Animations</h2>
+                              <p>Cleanstart uses the <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css (go play a little...) </a> library to show css animations and <a href="http://mynameismatthieu.com/WOW/" target="_blank">wow.js</a> to reveal them on scroll. In order to animate an object you have to assign <code>animated</code> class to the element and the proper animation class from <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a>. If you want to reveal this object on scroll, replace &quot;animated' with the <code>wow</code> class.</p>
+                              <p>For example, the current section icon animation <small>(refresh your browser window now [F5] if you missed it)</small> is achieved by...</p>
+                              <pre>
+&lt;h1 id=&quot;animations&quot; class=&quot;page-header&quot;&gt;&lt;i class=&quot;fa fa-magic <strong>wow bounceInLeft</strong>&quot;&gt;&lt;/i&gt; Animations&lt;/h1&gt;</pre>
+                              <p>Animations are a nice addition to a theme but <strong>remember not to overuse them</strong>!</p>
+                         </div>
+                         <!-- Support
+================================================== -->
+                         <div class="bs-docs-section">
+                              <h2 id="support" class="page-header"><i class="fa fa-flag"></i> Support & Credits</h2>
+                              <p>Plethora Themes offers support online through its <a href="http://www.plethorathemes.com/support">support suite</a> but you have to register first with your <a href="http://themeforest.net/forums/thread/how-to-find-item-purchase-code-screenshotmockup/105269#1000773">Themeforest Purchase code</a>.</p>
+                              <p>The photos of the live preview are mainly <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank">(CC 1.0)</a> &amp; (CC BY 2.0) from:<br>
+                                   <a href="http://unsplash.com/" target="_blank">Unsplash</a>, <a href="http://join.deathtothestockphoto.com/" target="_blank">DeathtoStock Wired</a>, <a href="https://www.flickr.com/photos/pinksherbet/sets/72157610551917961/" target="_blank">D. Sharon Pruitt</a>, <a href="http://www.flickr.com/photos/haldanemartin">HALDANE MARTIN</a>, <a href="https://www.flickr.com/photos/dominicspics/sets/72157632990619260/">Dominic Alves</a>, <a href="http://picjumbo.com/">PicJumbo</a>, <a href="https://www.flickr.com/photos/salforduniversity/">University of Salford Press Office</a><br>
+                                   <br>
+                                   The Services Section Photos used for comparing with the twenty-twenty plugin are works of <a href="https://www.behance.net/arisen13">Aris Espanola</a> who kindly let me use his work. Thanks Ari!<br>
+                                   The Portfolio Photos and Illustraions are works of <a href="https://www.behance.net/mariapapageorgiou" target="_blank">Maria Papageorgiou</a>, <a href="http://urbangraphics.gr/project/89" target="_blank">Vasiliki Koumaridou</a>, and <a href="http://bend.gr/">Bend.</a> THANX to all the creators that have given their approval for their work to be displayed at the Demo.<br>
+                                   The Video on the Blog, Photos on the Portfolio and the Flickr account photos are works of our dear friend <a href="http://www.dimitragiannouka.com/" target="_blank">Dimitra Giannouka</a><br>
+                                   The Background Video is from &quot;FLOCK&quot; (<a href="http://www.theflockcollective.com/">theflockcollective.com</a>) <a href="http://vimeo.com/71409522">http://vimeo.com/71409522</a><br>
+                              </p>
+                              <p> The Apple logo and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. All logos are trademarks of their respective owners, registered in the U.S. and other countries.</p>
+                         </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                         <div class="bs-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="564">
+                              <ul class="nav bs-docs-sidenav">
+                                   <li><a href="#overview"><i class="fa fa-align-center"></i> Overview</a></li>
+                                   <li><a href="#layout"><i class="fa fa-th-large"></i> Grid & Layout</a></li>
+                                   <li><a href="#mainsections"><i class="fa fa-puzzle-piece"></i> Main sections</a></li>
+                                   <li><a href="#less"><i class="fa fa-stack-overflow"></i> {LESS} & CSS</a></li>
+                                   <li><a href="#header"><i class="fa fa-hand-o-up"></i> Header</a></li>
+                                   <li><a href="#megamenu"><i class="fa fa-list-ul"></i> Mega Menu</a></li>
+                                   <li><a href="#flexslider"><i class="fa fa-indent"></i> Flexslider</a></li>
+                                   <li><a href="#fullpagephoto"><i class="fa fa-picture-o"></i> Fullpage Photo</a></li>
+                                   <li><a href="#portfolio"><i class="fa fa-th"></i> Portfolio & Isotope</a></li>
+                                   <li><a href="#shortcodes"><i class="fa fa-rocket"></i> Styled Elements</a></li>
+                                   <li><a href="#footer"><i class="fa fa-hand-o-down"></i> Footer &amp; Contact</a></li>
+                                   <li><a href="#animations"><i class="fa fa-magic"></i> Animations</a></li>
+                                   <li><a href="#support"><i class="fa fa-flag"></i> Support</a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <footer>
+               <section class="copyright dark_section">
+                    <div class="container triangles-of-section">
+                         <div class="triangle-up-left"></div>
+                         <div class="square-left"></div>
+                         <div class="triangle-up-right"></div>
+                         <div class="square-right"></div>
+                    </div>
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-sm-6 col-md-6"> Copyright ©2014 all rights reserved </div>
+                              <div class="text-right col-sm-6 col-md-6"> Designed by <a href="http://www.plethorathemes.com/">Plethora Themes</a> </div>
+                         </div>
+                    </div>
+               </section>
+          </footer>
+     </div>
+     <script src="../js/jquery-1.10.2.min.js"></script>
+     <script src="../twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="../js/modernizr.custom.48287.js"></script>
+     <script src="../js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js"></script>
+     <script src="../js/isotope/jquery.isotope.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="../js/jquery.ui.totop.js"></script>
+     <script type="text/javascript" src="../js/easing.js"></script>
+     <script type="text/javascript" src="../js/wow.min.js"></script>
+     <!-- the Simplrsmoothscroll script is used to smoothly scroll the page -->
+     <script src="../js/jquery.mousewheel.min.js"></script>
+     <script src="../js/jquery.simplr.smoothscroll.js"></script>
+     <script type="text/javascript" src="../js/cleanstart_theme.js"></script>
+     <!--To collapse the menu -->
+     <script type="text/javascript" src="../js/collapser.js"></script>
+     <script type="text/javascript">
+
+//Smooth scrolling on documentation page
+
+jQuery('.bs-docs-sidenav a').click(function() {
+    var href = $.attr(this, 'href');
+    jQuery('html, body').animate({
+        scrollTop: jQuery(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
+});
+
+</script>
+</div>
+</body>
+</html>
