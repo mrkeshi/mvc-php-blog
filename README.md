@@ -1,2 +1,2 @@
-# mvc-php-blog
+# mvc-php-project
 Blog project - php mvc
